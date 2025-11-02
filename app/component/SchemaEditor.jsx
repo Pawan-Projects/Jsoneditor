@@ -4,7 +4,7 @@ import React from "react";
 export default function SchemaEditor({ schemaText, setSchemaText, onUpdate }) {
   return (
     <div className="p-4 border rounded-lg bg-gray-50 d-flex flex-column">
-      <h2 className="font-bold text-lg mb-2">🧱 JSON Schema Editor</h2>
+      <h2 className="font-bold text-lg mb-2">JSON Schema Editor</h2>
       <textarea
         value={schemaText}
         onChange={(e) => setSchemaText(e.target.value)}

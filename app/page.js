@@ -216,7 +216,7 @@ export default function HomePage() {
 
   return (
     <div className="container-fluid bg-light min-vh-100 p-4">
-      <h1 className="text-center mb-4 font-bold text-2xl">🧠 JSON Form Builder (Next.js)</h1>
+      <h1 className="text-center mb-4 font-bold text-2xl">JSON Editor (Next.js)</h1>
 
       <div className="row g-4">
         <div className="col-md-4">

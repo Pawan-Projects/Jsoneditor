@@ -9,7 +9,7 @@ export default function FormRenderer({ schema, setFormData }) {
     async function loadEditor() {
       if (!schema) return;
 
-      // ✅ Dynamically import JSONEditor properly
+      // Dynamically import JSONEditor properly
       const { JSONEditor } = await import("@json-editor/json-editor");
 
       // Destroy previous instance if it exists
@@ -18,7 +18,7 @@ export default function FormRenderer({ schema, setFormData }) {
         editorRef.current = null;
       }
 
-      // ✅ Correct way to initialize
+      // Correct way to initialize
       const editor = new JSONEditor(containerRef.current, {
         schema,
         theme: "bootstrap5",
@@ -46,7 +46,7 @@ export default function FormRenderer({ schema, setFormData }) {
 
   return (
     <div className="p-4 border rounded-lg bg-gray-50">
-      <h2 className="font-bold text-lg mb-2">🧩 Form Renderer</h2>
+      <h2 className="font-bold text-lg mb-2">Form Renderer</h2>
       <div ref={containerRef}></div>
     </div>
   );
